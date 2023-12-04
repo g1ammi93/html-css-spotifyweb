@@ -8,7 +8,13 @@
  /* Root */
 
 
+
  /* Generics */
+
+ a {
+     cursor: pointer;
+     text-decoration: none;
+ }
 
  body,
  html {
@@ -33,9 +39,12 @@
  }
 
  header {
-     background-color: red;
+     background-color: rgb(31, 31, 31);
      height: 80px;
      flex-shrink: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
  }
 
 
@@ -65,9 +74,22 @@
      left: 0;
  }
 
+ /* Header */
+
+ .upgrade {
+     color: white;
+     border: 1px solid white;
+     border-radius: 30px;
+     text-align: center;
+     padding: 10px;
+     margin-left: auto;
+     margin-right: 5px;
+
+ }
+
  /* Sidebar */
 
- .menu-sidebar>img,
+ .menu-sidebar>a,
  .account {
      width: 30px;
      height: 30px;
