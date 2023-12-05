@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    <!-- Font Montserrat -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Fontawesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,29 +25,46 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="sidebar">
-            <div class="menu-sidebar">
-                <a href="#"><img src="img/logo-small.svg" alt="Logo Spotify" class="logo"></a>
-                <a href="#"><img src="img/home.svg" alt="Home"></a>
-                <a href="#"><img src="img/search.svg" alt="Search"></a>
-                <a href="#"><img src="img/libreria.svg" alt="Library"></a>
+    <div class="wrapper">
+        <div class="top-content">
+            <div class="sidebar">
+                <div class="menu-sidebar">
+                    <a href="#"><img src="img/logo-small.svg" alt="Logo Spotify" class="logo"></a>
+                    <a href="#"><img src="img/home.svg" alt="Home"></a>
+                    <a href="#"><img src="img/search.svg" alt="Search"></a>
+                    <a href="#"><img src="img/libreria.svg" alt="Library"></a>
+                </div>
+                <div class="bottom-sidebar">
+                    <span><i class="far fa-circle-down"></i></span>
+                    <a href="#"><img src="img/profile.svg" alt="Account" class="account"></a>
+                </div>
             </div>
-            <div class="bottom-sidebar">
-                <span><i class="far fa-circle-down"></i></span>
-                <a href="#"><img src="img/profile.svg" alt="Account" class="account"></a>
-            </div>
+            <main>
+                <header> <a href="#" class="upgrade">EFFETTUA L'UPGRADE</a></header>
+                <div class="navbar">
+                    <a href="#"><span>In E<span class="current">vide</span>nza</span></a>
+                    <a href="#"><span>Podcast</span></a>
+                    <a href="#"><span>Classifiche</span></a>
+                    <a href="#"><span>Generi e Mood</span></a>
+                    <a href="#"><span>Nuove Uscite</span></a>
+                    <a href="#"><span>Scopri</span></a>
+                </div>
+                <div class="container">
+                    <h2>Recent Player</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <div class="container">
-            <header> <a href="#" class="upgrade">EFFETTUA L'UPGRADE</a></header>
-            <main></main>
-        </div>
+        <footer>
 
+        </footer>
     </div>
-    <footer>
-
-    </footer>
-
 </body>
 
 </html>
