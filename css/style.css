@@ -439,11 +439,11 @@
      transform: scale(0.8);
  }
 
- .current-progress:hover {
+ .progress-bar:hover .current-progress {
      background-color: green;
  }
 
- .current-progress:hover .marker {
+ .progress-bar:hover .marker {
      display: inline;
  }
 
