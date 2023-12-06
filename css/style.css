@@ -7,7 +7,10 @@
 
  /* Root */
 
-
+ :root {
+     --green: rgb(185, 255, 48);
+     --gray: rgb(128, 130, 134);
+ }
 
  /* Generics */
 
@@ -42,6 +45,12 @@
  .sidebar span.white {
      color: white;
  }
+
+ .no-margin-b {
+     margin-bottom: 0;
+ }
+
+ /* Layout */
 
  .wrapper {
      display: flex;
@@ -187,14 +196,14 @@
  }
 
  .navbar>li>a {
-     color: rgb(128, 130, 134);
+     color: var(--gray);
  }
 
  /* Aggiungo Sottolineatura alla sezione Attiva */
 
  .active::after {
      content: '';
-     background-color: rgb(185, 255, 48);
+     background-color: var(--green);
      height: 2px;
      display: block;
      margin: 3px auto;
@@ -218,18 +227,13 @@
  }
 
  h5 {
-     color: rgb(128, 130, 134);
+     color: var(--gray);
 
  }
 
  h6 {
      color: white;
      font-size: 13px;
- }
-
- h7 {
-     color: rgb(128, 130, 134);
-     font-size: smaller;
  }
 
  /* Music Section */
@@ -307,7 +311,7 @@
 
  .music-active-button {
      cursor: pointer;
-     color: rgb(128, 130, 134);
+     color: var(--gray);
      display: flex;
      flex-direction: column;
      margin-left: 20px;
@@ -366,7 +370,7 @@
 
  .progress-bar {
      height: 5px;
-     background-color: rgb(128, 130, 134);
+     background-color: var(--gray);
      width: 100px;
      position: relative;
  }
@@ -394,7 +398,7 @@
      top: 50%;
      right: 0;
      display: none;
-     translate: 50% -50%;
+     transform: translate(50%, -50%);
  }
 
  /* Section Active Side Bar */
@@ -405,7 +409,7 @@
      left: 0;
      height: 40px;
      display: block;
-     border-left: 3px solid rgb(185, 255, 48);
+     border-left: 3px solid var(--green);
  }
 
  /* Effetti Hover */
@@ -476,7 +480,7 @@
 
      .sidebar a,
      .sidebar span {
-         color: rgb(128, 130, 134)
+         color: var(--gray);
      }
 
      .top-sidebar,
